@@ -34,7 +34,7 @@ Project GoodMan functions in three simple steps:
 # About this Project
 This proposal is for Project GoodMan drafted to participate in HACKMSIT_2019 organized by IOSD.
 Team Members : 
-Vipin Joshi
-Tanya Mittal
-Tushar Sabhani
-Lakshita Malhotra
+- Vipin Joshi
+- Tanya Mittal
+- Tushar Sabhani
+- Lakshita Malhotra
