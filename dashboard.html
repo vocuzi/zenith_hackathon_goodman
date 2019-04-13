@@ -1,121 +1,102 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<html>
 <head>
-<title>PROJECT GOODMAN</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+     <style>   body {
+          width: 300px;
+          /*height: 300px;*/
+          margin: 0;
+        }
+        button {
+          height: 30px;
+          width: 30px;
+          outline: none;
+        }
+        
+        header {display: block; background-color: black; clear: both; margin: 0 auto; text-align: center;}
+        header > div {padding: 10px; display: table; width: 100%;}
+        header > div > * {display: inline-block; vertical-align: top;}
+        header span {line-height: 30px; display: inline-block; vertical-align: middle; background-color: black; color: white; font-size: 1.6em;}
 
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        div.container > section {text-align: center; border-bottom: 1px solid rgba(0,0,0,0.2);}
+        div.container > section > div {padding: 10px 20px;}
+        div.container > section > div > div {font-size: 1.6em; font-weight: bold;}
+        div.container > section:last-child > div {padding-bottom: 20px;}
+        div.container > section > div > h3 {font-size: 0.9em; margin-bottom: 0;}
 
+        footer {}
+        footer section {}
+        footer section > div > * {display: inline-block;}
+        footer div.button {width: 50%; border-radius: 2px;}
+        footer div.button > div {padding: 10px; text-align: center; font-size: 1.2em; color: white;}
+        footer div.button#remove {background-color: #e74c3c; color: white;}
+        footer div.button#pause {background-color: #27ae60; color: white;}
+        footer div.button {}
+        footer a {display: block; text-decoration: none; color: white; font-weight: bold;}
+        footer a > div {padding: 10px 0px; text-align: center; font-size: 1.3em; color: white; background-color: #3C5A99;}
 
-<link href="css/style_grid.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        .column {
+  float: left;
+  width: 50%;
+  text-align: center; 
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-top: 15px;
+}
 
-
-<link href="css/font-awesome.css" rel="stylesheet"> 
-
-<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+      
+</style>
 </head>
 <body>
-<div class="copyrights">
-	 <p style="color: #F89C0E"><img src="logo2.png"><b>PROJECT GOODMAN</b> </p>
-</div>	
-<p align="center">
-<div class="wthree_agile_admin_info" align="center">
-		 
-		  
-		
-				<div class="inner_content">
-				    
-					<div class="inner_content_w3_agile_info">
-					
-					   <div class="agile_top_w3_grids">
-					          <ul class="ca-menu">
-									
-									<li>
-										<a href="#">
-										  <i class="fa fa-database" aria-hidden="true"></i>
-											<div class="ca-content">
-												<h4 class="ca-main one">26,808</h4>
-												<h3 class="ca-sub one"><b>Today Mined Count</b></h3>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fa fa-database" aria-hidden="true"></i>
-											<div class="ca-content">
-											<h4 class="ca-main two">29,008</h4>
-												<h3 class="ca-sub two"><b>Total Mined Count<b></h3>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fa fa-user" aria-hidden="true"></i>
-											<div class="ca-content">
-												<h4 class="ca-main three">1 Jan 2019</h4>
-												<h3 class="ca-sub three"><b>Joined On</b></h3>
-											</div>
-										</a>
-									</li>
-										<li>
-										<a href="#">
-											<i class="fa fa-clone" aria-hidden="true"></i>
-											<div class="ca-content">
-												<h4 class="ca-main four">12 Mar 2019</h4>
-												<h3 class="ca-sub four"><b>Last Mined</b></h3>
-											</div>
-										</a>
-									</li>
-									<div class="clearfix"></div>
-								</ul>
-					   </div>
+	<header>
+        <div>
+          <img src="logo2.png" style="height: 35px;">
+          <span><b>Project Goodman</b></span>
+        </div>
+    </header>
 
-					</p>
-<p align="center">
-<button type="button" class="btn btn-success"><b>Pause</b></button>
-<button type="button" class="btn btn-danger"><b>Remove</b></button>
-</p>
-<br>
+    <div class="container">
 
-<p align="center">
-<div id="fb-share-button">
-    <svg viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet">
-        <path class="svg-icon-path" d="M9.1,0.1V2H8C7.6,2,7.3,2.1,7.1,2.3C7,2.4,6.9,2.7,6.9,3v1.4H9L8.8,6.5H6.9V12H4.7V6.5H2.9V4.4h1.8V2.8 c0-0.9,0.3-1.6,0.7-2.1C6,0.2,6.6,0,7.5,0C8.2,0,8.7,0,9.1,0.1z"></path>
-    </svg>
-    <span>Share on Facebook</span>
+       <div class="row" style=" height:150px">
+  <div class="column" style="background-color: #e7eadc">
+    <img src="https://img.icons8.com/metro/52/000000/coins.png">
+    <div><h2>0.0001763 WEB</h2></div>
+    <h4>Today Mined Crypto</h4>
+  </div>
+  <div class="column" style="background-color: #ddd4c8">
+    <img src="https://img.icons8.com/metro/52/000000/coins.png">
+     <div><h2>0.5647565 WEB</h2></div>
+    <h4>Total Mined Crypto</h4>
+  </div>
+  <div class="column" style="background-color: #ddd4c8">
+   <img src="https://img.icons8.com/metro/26/000000/calendar.png">
+            <div><h2>03 April, 2019</h2></div>
+            <h4>Joined on </h4>
+  </div>
+  <div class="column" style="background-color: #e7eadc">
+    <img src="https://img.icons8.com/metro/26/000000/calendar.png">
+            <div><h2>04 April, 2019</h2></div>
+            <h4>Last mined </h4>
+  </div>
 </div>
-</p>	
-<br><br>				 
 
-<!--copy rights end here-->
-<!-- js -->
+ </div>     
 
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-
-<script type="text/javascript">
-	var fbButton = document.getElementById('fb-share-button');
-var url = window.location.href;
-
-fbButton.addEventListener('click', function() {
-    window.open('https://www.facebook.com/sharer/sharer.php?u=' + url,
-        'facebook-share-dialog',
-        'width=800,height=600'
-    );
-    return false;
-});
-</script>	
-	
-<script src="js/bars.js"></script>
-<script src="js/jquery.nicescroll.js"></script>
-<script src="js/scripts.js"></script>
-
-<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-
-
+<footer>
+        <section>
+          <div>
+            <div class="button" id="pause">
+              <div><b>Pause</b></div>
+            </div><div class="button" id="remove">
+              <div><b>Remove</b></div>
+            </div>
+          </div>
+        </section>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.projectgoodman.tech%2F" target="_blank"><div>Share on Facebook</div></a>
+      </footer>
 </body>
 </html>
